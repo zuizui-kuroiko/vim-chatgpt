@@ -23,9 +23,8 @@ The plugin offers the following commands for interacting with ChatGPT:
 (1) `:Chat '<prompt>'` Sends your raw prompt to the ChatGPT API.
 To use this command, type :Chat followed by your prompt.
 
-(2) `:<>Ask` If there is no additional context, the code highlighted in the request will be sent to ChatGPT.
-The additional context specifies the content of the request to ChatGPT.
-.
+(2) `:<>Ask '<context>'` If there is no additional context, the code highlighted in the request will be sent to ChatGPT.
+The additional context specifies the content of the request to ChatGPT. (The highlighted code is also sent to ChatGPT after the additional context.)
 To use these commands (:Ask :Review :Explain, or :Rewrite), visually select the lines of code you want to interact with, then type the desired command and press Enter.
 
 (3) `:<>Review` Sends the highlighted code to ChatGPT and requests a review.
