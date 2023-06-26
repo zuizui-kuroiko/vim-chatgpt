@@ -23,7 +23,7 @@ function! SendVS(ask, line1, line2, context)
     let prompt = ''
     if len(a:context) > 0
       let prompt = 'I have the following code snippet, can you rewrite to' . a:context . '?\n' . yanked_text
-    elseif
+    else
       return
     endif
   elseif a:ask == 'review'
